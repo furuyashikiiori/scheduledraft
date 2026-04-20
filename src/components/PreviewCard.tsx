@@ -17,8 +17,8 @@ export const PreviewCard = ({ text, setText, onInsert }: any) => {
   };
 
   return (
-    <div className='bg-white p-6 rounded-2xl border border-gray-100 shadow-sm h-full flex flex-col'>
-      <div className='flex justify-between items-center mb-4'>
+    <div className='bg-white p-6 rounded-2xl border border-gray-100 shadow-sm h-full flex flex-col overflow-hidden'>
+      <div className='flex justify-between items-center mb-4 flex-shrink-0'>
         <h2 className='font-bold text-gray-800 flex items-center gap-2'>
           <Sparkles size={20} className='text-sky-500' strokeWidth={1.5} />
           生成テキスト
@@ -45,12 +45,12 @@ export const PreviewCard = ({ text, setText, onInsert }: any) => {
         id='preview-textarea'
         value={text}
         onChange={(e) => setText(e.target.value)}
-        className='flex-1 w-full p-4 bg-gray-50 rounded-xl border-none text-sm font-mono leading-relaxed focus:ring-2 ring-sky-100 outline-none resize-none'
+        className='flex-1 w-full p-4 bg-gray-50 rounded-xl border-none text-sm font-mono leading-relaxed focus:ring-2 ring-sky-100 outline-none resize-none min-h-0'
       />
 
       <button
         onClick={handleCopy}
-        className={`mt-4 w-full py-3 rounded-xl font-bold transition ${
+        className={`mt-4 w-full py-3 rounded-xl font-bold transition flex-shrink-0 ${
           copied
             ? "bg-green-500 text-white hover:bg-green-600"
             : "bg-gray-900 text-white hover:bg-gray-800"

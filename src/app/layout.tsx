@@ -24,13 +24,13 @@ export default function RootLayout({
           <nav className='flex gap-1 bg-gray-100 p-1 rounded-xl'>
             <Link
               href='/'
-              className='px-6 py-2 rounded-lg text-sm font-bold hover:bg-white transition-all shadow-sm'
+              className='px-3 py-1 lg:px-6 lg:py-2 rounded-lg text-xs lg:text-sm font-bold hover:bg-white transition-all shadow-sm'
             >
               ツール
             </Link>
             <Link
               href='/about'
-              className='px-6 py-2 rounded-lg text-sm font-bold hover:bg-white transition-all shadow-sm'
+              className='px-3 py-1 lg:px-6 lg:py-2 rounded-lg text-xs lg:text-sm font-bold hover:bg-white transition-all shadow-sm'
             >
               使い方
             </Link>

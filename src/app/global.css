@@ -9,3 +9,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+/* Reserve scrollbar space to prevent layout shift */
+.custom-scrollbar {
+  scrollbar-gutter: stable;
+}
