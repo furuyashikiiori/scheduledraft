@@ -19,14 +19,14 @@ export const SelectedListCard = ({
   onUpdateTime,
   onRemove,
 }: Props) => (
-  <div className='bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex flex-col h-full'>
-    <h2 className='text-lg font-bold mb-4 flex items-center justify-between'>
+  <div className='bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex flex-col h-full overflow-hidden'>
+    <h2 className='text-lg font-bold mb-4 flex items-center justify-between flex-shrink-0'>
       選択中の日程
       <span className='text-xs bg-gray-100 px-2 py-1 rounded-lg text-gray-500'>
         {schedules.length}枠
       </span>
     </h2>
-    <div className='flex-1 space-y-3 overflow-y-auto pr-2 custom-scrollbar'>
+    <div className='flex-1 space-y-3 overflow-y-auto pr-2 custom-scrollbar min-h-0'>
       {schedules.map((s) => {
         const dateObj = parseISO(s.date);
         const dayOfWeek = getDay(dateObj);
