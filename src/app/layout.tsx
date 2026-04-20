@@ -2,6 +2,7 @@ import "./global.css";
 import Link from "next/link";
 import { CalendarSync } from "lucide-react";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "ShiftDraft | シンプルな予定テキスト作成ツール",
@@ -59,6 +60,7 @@ export default function RootLayout({
 
         {/* コンテンツ部分 (ヘッダーの高さ分 margin-top を確保) */}
         <div className='pt-20'>{children}</div>
+        <Analytics />
       </body>
     </html>
   );
