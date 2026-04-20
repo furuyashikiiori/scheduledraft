@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "ShiftDraft | シンプルな予定テキスト作成ツール",
+  title: "ScheduleDraft | シンプルな予定テキスト作成ツール",
   description:
     "カレンダーを選ぶだけで、LINEやSlackにそのまま貼り付けられる予定表を自動生成。シフト提出や予定共有がもっと簡単に！",
   keywords: [
