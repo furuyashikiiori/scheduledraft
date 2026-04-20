@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 75, 85, 99; /* Medium gray for text */
+  --background-rgb: 248, 250, 252; /* Very pale gray-blue background */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
