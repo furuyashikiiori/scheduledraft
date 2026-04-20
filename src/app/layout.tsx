@@ -1,6 +1,23 @@
 import "./global.css";
 import Link from "next/link";
 import { CalendarSync } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ShiftDraft | シンプルな予定テキスト作成ツール",
+  description:
+    "カレンダーを選ぶだけで、LINEやSlackにそのまま貼り付けられる予定表を自動生成。シフト提出や予定共有がもっと簡単に！",
+  keywords: [
+    "シフト作成",
+    "バイト提出",
+    "シフト管理",
+    "予定共有",
+    "テキスト生成",
+  ],
+  verification: {
+    google: "ZNAlrch4NDHute3fpMkSwxOKAWKZmQ3i_MPH70-FKvo",
+  },
+};
 
 export default function RootLayout({
   children,
