@@ -17,7 +17,7 @@ export default function RootLayout({
               <CalendarSync size={18} strokeWidth={1.5} />
             </div>
             <h1 className='text-xl font-black tracking-tighter text-gray-800 uppercase'>
-              ShiftDraft
+              ScheduleDraft
             </h1>
           </div>
 
