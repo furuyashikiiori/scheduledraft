@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "予定共有",
     "テキスト生成",
   ],
+  icons: {
+    icon: "/favicon.ico",
+  },
   verification: {
     google: "ZNAlrch4NDHute3fpMkSwxOKAWKZmQ3i_MPH70-FKvo",
   },
