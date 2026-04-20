@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 // 綺麗なアイコンをインポート
 import {
   Clock,
@@ -64,6 +65,17 @@ export default function AboutPage() {
         <p className='text-gray-400 text-sm mb-20 tracking-wide'>
           6ステップで、簡単にカレンダーから文書を作成できます！
         </p>
+
+        <div className='mx-auto mb-16 rounded-lg shadow-md overflow-hidden max-w-2xl'>
+          <Image
+            src='/images/ScheduleDraft.png'
+            alt='使い方の画像'
+            width={600}
+            height={400}
+            className='w-full h-auto'
+            loading='eager'
+          />
+        </div>
 
         {/* ステップリスト */}
         <div className='space-y-16'>
